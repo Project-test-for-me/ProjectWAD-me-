@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuwait University Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="page container">
+
+        <header class="header">
+            <div class="header__logo">
+                <a class="header__logo img" href="index.html">
+                    <img src="../images/kuwait-university-logo.webp" alt="Kuwait University logo">
+                </a>
+            </div>
+            <h1 class="header__title">
+                Welcome to Kuwait University Assistant
+            </h1>
+        </header>
+
+        <nav class="navbar">
+            <ul class="navbar ul">
+                <li><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li><a class="nav-link" href="career.html">Career</a></li>
+                <li><a class="nav-link" href="profile.html">Profile</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Start Exploring</h2>
+                <p>
+                    Browse study materials, explore career advice, and connect with the Kuwait University community.
+                    Use the navigation above to find the information you need.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            &copy; <span id="current-year"></span> Kuwait University Assistant. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
