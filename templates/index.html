@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kuwait University Assistant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>KUGuide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="../images/kuwait-university-logo.webp" alt="Kuwait University" class="header__logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="career.html">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container my-5">
-        <header class="text-center mb-5">
-            <h1 class="display-4 fw-semibold text-dark">Welcome to Kuwait University Assistant</h1>
+    <div class="page-frame">
+        <header class="page-header">
+            <img src="../images/kuwait-university-logo.webp" alt="Kuwait University" class="header-logo">
+            <nav class="top-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="faq.html">FQA</a>
+                <a href="career.html">Career</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Sign in</a>
+            </nav>
         </header>
 
-        <main>
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h2 class="card-title h4">Start Exploring</h2>
-                    <p class="card-text">
-                        Browse study materials, explore career advice, and connect with the Kuwait University community.
-                        Use the navigation above to find the information you need.
-                    </p>
+        <main class="main-content">
+            <section class="hero">
+                <h1>Welcome to KUGuide</h1>
+                <p class="hero-subtitle">Introduction to what the website is for</p>
+                <h2>Everything You Need</h2>
+            </section>
+
+            <section class="info-grid" aria-label="Key services">
+                <article class="info-card">
+                    <h3>Student Community</h3>
+                    <p>Info here</p>
+                </article>
+                <article class="info-card">
+                    <h3>Study Materials</h3>
+                    <p>Info here</p>
+                </article>
+                <article class="info-card">
+                    <h3>AI Assistant</h3>
+                    <p>Info here</p>
+                </article>
+                <article class="info-card">
+                    <h3>Career Support</h3>
+                    <p>Info here</p>
+                </article>
+                <article class="info-card info-card--highlight">
+                    <h3>Quick Access</h3>
+                </article>
+            </section>
+
+            <section class="quick-access" aria-label="Quick links">
+                <div class="quick-grid">
+                    <div class="quick-card">
+                        <span class="image-placeholder" aria-hidden="true">Image here</span>
+                        <p>Career</p>
+                    </div>
+                    <div class="quick-card">
+                        <span class="image-placeholder" aria-hidden="true">Image here</span>
+                        <p>Profile</p>
+                    </div>
+                    <div class="quick-card">
+                        <span class="image-placeholder" aria-hidden="true">Image here</span>
+                        <p>Chat Room</p>
+                    </div>
                 </div>
-            </div>
+                <p class="cta-intro">Ready to Get Started?</p>
+                <a class="cta-button" href="#">Create Account</a>
+                <a class="contact-link" href="contact.html">Contact us</a>
+            </section>
+
+            <aside class="social-note">Adicing social media</aside>
         </main>
 
-        <footer class="mt-5 text-center text-secondary">
-            <small>&copy; <span id="current-year"></span> Kuwait University Assistant. All rights reserved.</small>
+        <footer class="page-footer">
+            <small>&copy; 2025 KUGuide All rights reserved</small>
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
-
 </html>
