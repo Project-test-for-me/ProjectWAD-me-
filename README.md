@@ -1,220 +1,213 @@
-# 🎓 Virtual Campus – Website Application Development Project
+# 🧠 PROJECT TASK: Virtual Campus Website Development
 
-**Course:** Website Application Development (WAD)  
-**Instructor:** Dr. Shariffah Zamoon  
-**Department:** College of Business Administration – ISOM  
-**Semester:** Fall 2025/2026  
-**Section:** 01A
+## 📘 Context
 
-**Team Members:**
-
-- Abdulrahman Mahmoud – ID: 2211137512
-- Abdullah Bukoubar – ID: 2212171344
-- Abdullah Alrashidi – ID: 2211124171
-- Yousef Alfarhan – ID: 2211123749
-- Aisha Alsubaie – ID: 2212172410
+This project is for the **Website Application Development (WAD)** course at Kuwait University, Fall 2025/2026, under Dr. Shariffah Zamoon.  
+It’s a team-based assignment where students are developing a full-stack web application for the Kuwait University community.
 
 ---
 
-## 🧩 Concept / Problem Attempted to Be Solved
+## 🎯 Project Goal
 
-Students at Kuwait University often face these struggles:
-
-- No **reliable communication platform** for sharing study tips or discussing courses.
-- **WhatsApp groups** are cluttered with hundreds of mixed messages and get deleted often.
-- Difficulty finding **lecture notes, slides, and textbooks** across multiple websites.
-- Repeated **academic and administrative questions** (withdrawal dates, registration, graduation).
-- **Graduates** struggle to find job-related certifications or training programs.
-
-This platform solves those issues by:
-
-- Providing organized chat rooms by course or topic.
-- Offering access to academic materials in one place.
-- Including an **AI chatbot** for quick answers about KU systems.
-- Helping graduates through a **career guidance section** with OSTA collaboration.
+Build a responsive, user-friendly **Virtual Campus** platform that connects **students and graduates** to share academic resources, chat, and access career guidance.
 
 ---
 
-## 👥 Target Audience (Users)
+## 🧩 Problem Definition
 
-The website serves **Kuwait University’s academic community**, especially:
+Kuwait University students face several challenges:
 
-### 🎓 Current University Students
+1. No unified communication platform for course discussions.
+2. Difficulty finding notes, slides, and study materials.
+3. Confusion around university dates and academic procedures.
+4. Graduates struggle to find relevant skills, certificates, and job opportunities.
 
-- Access notes, slides, and textbooks.
-- Communicate with peers about courses and professors.
-- Receive answers from the AI chatbot about university dates and procedures.
+The system aims to solve these by integrating:
 
-### 💼 Recent Graduates
-
-- Explore job and internship opportunities.
-- Learn about **in-demand certifications and skills** in Kuwait’s job market.
+- Chat rooms for courses and topics.
+- AI chatbot to answer university-related questions.
+- Centralized study material sharing.
+- Career and certification guidance via OSTA.
 
 ---
 
-## 🚀 Main Features
+## 👥 Target Users
 
-### 💬 Group Chat Rooms
+- **Current University Students**: Need study materials, discussions, and academic support.
+- **Recent Graduates**: Need job listings, certifications, and career resources.
 
-Students can join discussion rooms by topic or course to share resources and help each other.
+---
 
-### 🤖 AI Chatbot
+## 🚀 Core Features
 
-Powered by **OpenAI**, answers common student questions instantly.
-Includes **voice command** support for accessibility.
+1. **Group Chat Rooms**
 
-### 🎯 Career Guidance Section
+   - Real-time chat by topic or course.
+   - Organized communication replacing chaotic WhatsApp groups.
 
-Displays job listings, certifications, and required skills (e.g., HTML, CSS, UI/UX for Web Designers).
-Includes OSTA announcements for training, workshops, and job fairs.
+2. **AI Chatbot**
 
-### 👤 User Accounts & Profiles
+   - Powered by OpenAI model.
+   - Handles voice commands and FAQs (e.g., “When does registration open?”).
 
-Students create accounts using their **University ID and email**.  
-Once logged in, they can:
+3. **Career Guidance**
 
-- Access chat rooms.
-- View or edit profiles.
-- Automatically detect their major based on KU ID.
+   - Job listings and in-demand certifications (HTML, CSS, UI/UX, etc.).
+   - Integration with OSTA for workshops and internships.
 
-### 📱 Responsive Design
+4. **User Accounts & Profiles**
 
-Layout adapts automatically for desktops, tablets, and mobile devices using a **hamburger menu** for smaller screens.
+   - Registration via KU email and ID.
+   - Auto-detect major based on student ID.
+   - Profile customization (name, bio, photo).
+
+5. **Responsive Design**
+   - Optimized for desktop, tablet, and mobile.
+   - Bootstrap 5 grid and media queries for layout flexibility.
 
 ---
 
 ## ⚙️ Functional Requirements
 
-- Login and edit profile with university credentials.
-- Chatbot responds automatically to questions.
-- Career page recommends jobs based on user major (e.g., MIS → MIS jobs).
+- Users can log in, update profile, and navigate pages.
+- Chatbot responds automatically to text queries.
+- Career page dynamically suggests roles by major.
 
 ---
 
-## 🔒 Non-Functional Requirements
+## 🔐 Non-Functional Requirements
 
-- Secure authentication for user accounts.
-- Compatible across devices and browsers.
-- Adjustable font sizes and accessibility support.
-
----
-
-## 🎨 User Experience Requirements
-
-- Easy navigation with consistent color and font scheme.
-- Clear error messages with solutions.
-- Uniform layout across all pages.
+- Secure authentication for users.
+- Cross-device compatibility.
+- Accessible font sizes, color contrast, and voice support.
 
 ---
 
-## 🏗️ Website Structure (High-Level Overview)
+## 🎨 UX/UI Requirements
 
-### 🏠 Home Page
-
-- Navigation bar at the top.
-- Website intro and login/signup section.
-- Live announcements and FAQ highlights.
-
-### 💬 Chat Rooms
-
-- Real-time discussions per subject or topic.
-- Optional moderation by professors.
-
-### 👤 User Profile
-
-- Displays user’s name, ID, major, and photo.
-- Editable profile and access to saved resources.
-
-### 💼 Career Guidance
-
-- Job and certification listings per major.
-- E-learning links and OSTA training opportunities.
-
-### 📞 Contact Page
-
-- Feedback, technical support, and general inquiries.
+- Consistent design (color, typography, and spacing).
+- Clear navigation bar and hamburger menu.
+- Informative error messages for login and form issues.
 
 ---
 
-## 🧰 Technology Stack & Framework Specification
+## 🏗️ Website Structure Overview
 
-- **HTML5** – Structure
-- **CSS3** – Styling
-- **JavaScript** – Interactivity
-- **Bootstrap 5** – Responsive layout and components
-
-Custom CSS ensures a unique design while **Bootstrap’s grid system** maintains consistency across devices.  
-Interactive features include:
-
-- Pop-up messages
-- Dropdown menus
-- Input validation
+| Page                | Description                                                        |
+| ------------------- | ------------------------------------------------------------------ |
+| **Home**            | Navigation bar, intro, announcements, FAQ highlights, login/signup |
+| **Chat Rooms**      | Real-time discussions organized by subjects                        |
+| **Profile**         | View/edit name, major, bio, and photo                              |
+| **Career Guidance** | Job listings, certifications, internships                          |
+| **Contact**         | Feedback and technical support form                                |
 
 ---
 
-## 🧭 Website Architecture & Navigation Flow
+## 🧰 Technology Stack
 
-**Home Page**
-
-- Navbar
-- Login/Signup
-- Intro + Announcements + FAQ
-
-**Group Chat Rooms**
-
-- Real-time communication hub
-- Organized by topic
-- Search and filter options
-
-**User Profile**
-
-- Edit Name, ID, Major, Bio, and Picture
-- Dropdown navigation after login
-
-**Career Guidance**
-
-- Job listings, certifications, internships
-
-**Contact Page**
-
-- Feedback and inquiries
-- Accessible from navbar and footer
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Framework:** Bootstrap 5
+- **Interactivity:** Custom JS (popups, dropdowns, input validation)
+- **Accessibility:** Media queries, ARIA attributes, responsive layout
 
 ---
 
-## 🧩 Responsive Design & Layout Planning
+## 🧭 Navigation Flow
 
-### 📐 Layout
-
-Each page (Home, Chatroom, Career, Profile, FAQ, Contact) follows the same structure:
-
-- **Header:** KU logo + navigation links
-- **Main Content:** Core section (e.g., chat, careers)
-- **Footer:** Links and contact info
-
-### ♿ Accessibility
-
-- Readable font sizes on desktop/laptop
-- Adequate button spacing
-- Consistent color scheme
-
-### 🛠️ Tools Used
-
-- **Media Queries** for responsiveness
-- **Bootstrap Grid System** for flexible layouts
+- Full navbar on desktop
+- Collapsible hamburger menu on mobile
+- Persistent links to:
+  - Home
+  - Chat Rooms
+  - Career Guidance
+  - Profile
+  - Contact
 
 ---
 
-## 🧾 Contributions & Signatures
+## 🧱 Responsive Design Plan
 
-| Name                | Student ID | Contribution                                         |
-| ------------------- | ---------- | ---------------------------------------------------- |
-| Abdulrahman Mahmoud | 2211137512 | Target Users, Website Architecture & Navigation Flow |
-| Abdullah Bukoubar   | 2212171344 | Website Structure                                    |
-| Abdullah Alrashidi  | 2211124171 | Interactivity & Input Handling                       |
-| Yousef Alfarhan     | 2211123749 | Main Features, Responsive Design & Layout Planning   |
-| Aisha Alsubaie      | 2212172410 | Concept, Problem Solving, Technology Stack           |
+- Uniform header and footer on all pages.
+- Central content container for readability.
+- Mobile optimization using media queries.
 
 ---
 
-📅 **Date:** _(To be added)_
+## 🧾 Team Contributions
+
+| Member                               | Role                     | Contribution                                         |
+| ------------------------------------ | ------------------------ | ---------------------------------------------------- |
+| **Abdulrahman Mahmoud (2211137512)** | Lead Architect           | Target Users, Website Architecture & Navigation Flow |
+| **Abdullah Bukoubar (2212171344)**   | UI/UX Designer           | Website Structure                                    |
+| **Abdullah Alrashidi (2211124171)**  | Frontend Dev             | Interactivity & Input Handling                       |
+| **Yousef Alfarhan (2211123749)**     | Frontend Dev             | Main Features, Responsive Layout                     |
+| **Aisha Alsubaie (2212172410)**      | Content & System Planner | Concept, Problem, Technology Stack                   |
+
+---
+
+## 🧩 Development Tasks (for Codex)
+
+### 1️⃣ HTML Structure
+
+- Create base `index.html` (Home page)
+- Add linked pages:
+  - `chatrooms.html`
+  - `career.html`
+  - `profile.html`
+  - `contact.html`
+- Implement shared header/footer across all pages.
+
+### 2️⃣ CSS Styling
+
+- Use Bootstrap 5 base theme.
+- Add `style.css` for:
+  - Color scheme
+  - Font customization
+  - Hover transitions
+
+### 3️⃣ JS Interactivity
+
+- Implement chatbot input/output logic.
+- Validate form inputs on login/signup.
+- Add navigation animations.
+
+### 4️⃣ Responsive Behavior
+
+- Configure Bootstrap grid & media queries.
+- Test layout on desktop, tablet, and mobile.
+- Ensure accessibility compliance.
+
+### 5️⃣ Testing & Debugging
+
+- Verify navigation links.
+- Test AI chatbot prompt-response flow.
+- Validate form error messages.
+
+---
+
+## 📦 Deliverables
+
+- Fully functional website (`/project` folder)
+- Linked CSS and JS files
+- README.md (this file)
+- Screenshots or GIFs for demo
+
+---
+
+## 📅 Submission
+
+- Upload to **GitHub Classroom repository**
+- Ensure all contributors have commits
+- Commit message format: `feat: added [component]`
+
+---
+
+## ✅ Evaluation Criteria
+
+- Completeness (all pages functional)
+- Design consistency and accessibility
+- Proper use of Bootstrap and responsiveness
+- Clean code with comments
+- Team collaboration (GitHub commit history)
+
+---
