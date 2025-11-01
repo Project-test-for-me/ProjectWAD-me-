@@ -12,74 +12,51 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="alert-link" role="banner">
-        <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
-            <a class="navbar-brand" href="../templates/index.html">
-                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo">
+    <!--Navigation Bar -->
+    <div class="alert-link" role="alert">
+        <nav class="navbar navbar-expand-md navbar-light custom-navbar">
+            <a class="navbar-brand" href="../Templates/index.html">
+                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo"
+                    style="height: 80px;">
                 <p class="navbar-p">KUGuide</p>
             </a>
-            <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem"
-                    aria-current="page">Contact</a>
-                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
+            <div class="nav justify-content-end">
+                <a class="nav-link active" href="../Templates/index.html">Home</a>
+                <a class="nav-link active" href="../Templates/faq.html">FAQ</a>
+                <a class="nav-link active" href="../Templates/career.html">Career</a>
+                <a class="nav-link active" href="../Templates/profile.html">Profile</a>
+                <a class="nav-link active" href="../Templates/contact.html">Contact</a>
+                <button type="button" class="btn btn-primary">Sign in</button>
             </div>
         </nav>
-    </header>
+    </div>
+    <!--Navigation Bar -->
+    <h1>contact 5005005050</h1>
 
-    <main id="main-content" tabindex="-1">
-        <div class="layout-container">
-            <section class="content-card" aria-labelledby="contact-heading">
-                <h1 id="contact-heading">We are here to help</h1>
-                <p>Reach the KUGuide support team for technical assistance, account questions, or collaboration
-                    enquiries. Share
-                    your university ID so we can respond quickly.</p>
-            </section>
 
-            <section class="content-card" aria-label="Contact information">
-                <div class="contact-grid">
-                    <article class="contact-item">
-                        <h3>Visit us</h3>
-                        <p>Kuwait University, Khaldiya Campus<br>Student Affairs Building, 2nd Floor</p>
-                    </article>
-                    <article class="contact-item">
-                        <h3>Call or email</h3>
-                        <p><strong>Phone:</strong> +965 5005 0505<br><strong>Email:</strong> support@kuguide.edu.kw</p>
-                    </article>
-                    <article class="contact-item">
-                        <h3>Office hours</h3>
-                        <p>Sunday – Thursday: 8:00 AM – 4:00 PM<br>Saturday: 10:00 AM – 2:00 PM</p>
-                    </article>
-                </div>
-            </section>
 
-            <section class="content-card" aria-labelledby="contact-form-heading">
-                <h2 id="contact-form-heading">Send us a message</h2>
-                <form class="contact-form" action="#" method="POST">
-                    <label for="name">Full name</label>
-                    <input type="text" id="name" name="name" required placeholder="Your name">
 
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" required placeholder="example@ku.edu.kw">
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                        placeholder="Write your message here..."></textarea>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </section>
-        </div>
-    </main>
 
-    <footer>
-        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -90,10 +67,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="../scripts/index.js"></script>
+    <footer>
+        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
+    </footer>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+
 </body>
 
 </html>

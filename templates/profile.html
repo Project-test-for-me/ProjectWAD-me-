@@ -12,85 +12,36 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <header class="alert-link" role="banner">
-        <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
-            <a class="navbar-brand" href="../templates/index.html">
-                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo">
+    <!--Navigation Bar -->
+    <div class="alert-link" role="alert">
+        <nav class="navbar navbar-expand-md navbar-light custom-navbar">
+            <a class="navbar-brand" href="../Templates/index.html">
+                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo"
+                    style="height: 80px;">
                 <p class="navbar-p">KUGuide</p>
             </a>
-            <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem"
-                    aria-current="page">Profile</a>
-                <a class="nav-link" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
+            <div class="nav justify-content-end">
+                <a class="nav-link active" href="../Templates/index.html">Home</a>
+                <a class="nav-link active" href="../Templates/faq.html">FAQ</a>
+                <a class="nav-link active" href="../Templates/career.html">Career</a>
+                <a class="nav-link active" href="../Templates/profile.html">Profile</a>
+                <a class="nav-link active" href="../Templates/contact.html">Contact</a>
+                <button type="button" class="btn btn-primary">Sign in</button>
             </div>
         </nav>
-    </header>
+    </div>
+    <!--Navigation Bar -->
+    <h1>Profile page </h1>
 
-    <main id="main-content" tabindex="-1">
-        <div class="layout-container">
-            <section class="content-card" aria-labelledby="profile-heading">
-                <h1 id="profile-heading">Your KUGuide Profile</h1>
-                <p>Keep your academic information, interests, and achievements up to date so KUGuide can tailor
-                    resources to your journey.</p>
-            </section>
 
-            <section class="content-card" aria-labelledby="snapshot-heading">
-                <h2 id="snapshot-heading">Academic Snapshot</h2>
-                <table class="data-table">
-                    <tbody>
-                        <tr>
-                            <th scope="row">Programme</th>
-                            <td data-label="Programme">Bachelor of Science in Computer Engineering</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Current Year</th>
-                            <td data-label="Current Year">Third Year</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Focus Areas</th>
-                            <td data-label="Focus Areas">Embedded Systems, Data Science</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Clubs &amp; Communities</th>
-                            <td data-label="Clubs &amp; Communities">KU Robotics Club, Women in Tech</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
 
-            <section class="content-card" aria-labelledby="achievement-heading">
-                <h2 id="achievement-heading">Achievements &amp; Skills</h2>
-                <ul class="badge-list">
-                    <li>Dean’s List (2022 &amp; 2023)</li>
-                    <li>Machine Learning Mentor</li>
-                    <li>Community Moderator</li>
-                    <li>Volunteer Ambassador</li>
-                </ul>
-                <p>Share your achievements to unlock recommendations for leadership programmes, scholarships, and
-                    internships.</p>
-            </section>
 
-            <section class="content-card" aria-labelledby="profile-actions">
-                <h2 id="profile-actions">Next Steps</h2>
-                <p>Complete your profile to track deadlines, upcoming events, and relevant resources. The more complete
-                    your profile, the better your personalised recommendations will be.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="../templates/contact.html">Request Profile Support</a>
-                    <a class="btn btn-light" href="../templates/career.html">Review Career Matches</a>
-                </div>
-            </section>
-        </div>
-    </main>
 
-    <footer>
-        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
-    </footer>
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -101,10 +52,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="../scripts/index.js"></script>
+    <footer>
+        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
+    </footer>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+
 </body>
 
 </html>
