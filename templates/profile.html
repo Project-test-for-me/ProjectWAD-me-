@@ -12,35 +12,84 @@
 </head>
 
 <body>
-    <!--Navigation Bar -->
-    <div class="alert-link" role="alert">
-        <nav class="navbar navbar-expand-md navbar-light custom-navbar">
-            <a class="navbar-brand" href="../Templates/index.html">
-                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo"
-                    style="height: 80px;">
+    <header class="alert-link" role="banner">
+        <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
+            <a class="navbar-brand" href="../templates/index.html">
+                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo">
+                <p class="navbar-p">KUGuide</p>
             </a>
-            <div class="nav justify-content-end">
-                <a class="nav-link active" href="../Templates/index.html">Home</a>
-                <a class="nav-link active" href="../Templates/faq.html">FAQ</a>
-                <a class="nav-link active" href="../Templates/career.html">Career</a>
-                <a class="nav-link active" href="../Templates/profile.html">Profile</a>
-                <a class="nav-link active" href="../Templates/contact.html">Contact</a>
+            <div class="nav justify-content-end" role="menubar">
+                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
                 <button type="button" class="btn btn-primary">Sign in</button>
             </div>
         </nav>
-    </div>
-    <!--Navigation Bar -->
-    <h1>Profile page </h1>
+    </header>
 
+    <main>
+        <div class="layout-container">
+            <section class="content-card" aria-labelledby="profile-heading">
+                <h1 id="profile-heading">Your KUGuide Profile</h1>
+                <p>Keep your academic information, interests, and achievements up to date so KUGuide can tailor
+                    resources
+                    to your journey.</p>
+            </section>
 
+            <section class="content-card" aria-labelledby="snapshot-heading">
+                <h2 id="snapshot-heading">Academic Snapshot</h2>
+                <table class="data-table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Programme</th>
+                            <td>Bachelor of Science in Computer Engineering</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Current Year</th>
+                            <td>Third Year</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Focus Areas</th>
+                            <td>Embedded Systems, Data Science</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Clubs &amp; Communities</th>
+                            <td>KU Robotics Club, Women in Tech</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
+            <section class="content-card" aria-labelledby="achievement-heading">
+                <h2 id="achievement-heading">Achievements &amp; Skills</h2>
+                <ul class="badge-list">
+                    <li>Dean’s List (2022 &amp; 2023)</li>
+                    <li>Machine Learning Mentor</li>
+                    <li>Community Moderator</li>
+                    <li>Volunteer Ambassador</li>
+                </ul>
+                <p>Share your achievements to unlock recommendations for leadership programmes, scholarships, and
+                    internships.</p>
+            </section>
 
+            <section class="content-card" aria-labelledby="profile-actions">
+                <h2 id="profile-actions">Next Steps</h2>
+                <p>Complete your profile to track deadlines, upcoming events, and relevant resources. The more complete
+                    your
+                    profile, the better your personalised recommendations will be.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="../templates/contact.html">Request Profile Support</a>
+                    <a class="btn btn-light" href="../templates/career.html">Review Career Matches</a>
+                </div>
+            </section>
+        </div>
+    </main>
 
-
-
-
-
-
+    <footer>
+        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -51,77 +100,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../scripts/index.js"></script>
-    <footer>
-        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
-    </footer>
+
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="icon" href="../images/section1-img/kuwait-university-logo.webp" type="image/png">
-</head>
-
-<body>
-    <!--Navigation Bar -->
-    <div class="alert-link" role="alert">
-        <nav class="navbar navbar-expand-md navbar-light custom-navbar">
-            <a class="navbar-brand" href="../Templates/index.html">
-                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo"
-                    style="height: 80px;">
-            </a>
-            <div class="nav justify-content-end">
-                <a class="nav-link active" href="../Templates/index.html">Home</a>
-                <a class="nav-link active" href="../Templates/faq.html">FAQ</a>
-                <a class="nav-link active" href="../Templates/career.html">Career</a>
-                <a class="nav-link active" href="../Templates/profile.html">Profile</a>
-                <a class="nav-link active" href="../Templates/contact.html">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
-            </div>
-        </nav>
-    </div>
-    <!--Navigation Bar -->
-    <h1>Profile page </h1>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="../scripts/index.js"></script>
-    <footer>
-        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
-    </footer>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-
 </body>
 
 </html>

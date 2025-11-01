@@ -12,98 +12,95 @@
 </head>
 
 <body>
-    <!--Navigation Bar -->
-    <div class="alert-link" role="alert">
-        <nav class="navbar navbar-expand-md navbar-light custom-navbar">
-            <a class="navbar-brand" href="../Templates/index.html">
-                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo"
-                    style="height: 80px;">
+    <header class="alert-link" role="banner">
+        <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
+            <a class="navbar-brand" href="../templates/index.html">
+                <img src="../images/section1-img/kuwait-university-logo.webp" alt="Kuwait University Logo">
+                <p class="navbar-p">KUGuide</p>
             </a>
-            <div class="nav justify-content-end">
-                <a class="nav-link active" href="../Templates/index.html">Home</a>
-                <a class="nav-link active" href="../Templates/faq.html">FAQ</a>
-                <a class="nav-link active" href="../Templates/career.html">Career</a>
-                <a class="nav-link active" href="../Templates/profile.html">Profile</a>
-                <a class="nav-link active" href="../Templates/contact.html">Contact</a>
+            <div class="nav justify-content-end" role="menubar">
+                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
                 <button type="button" class="btn btn-primary">Sign in</button>
             </div>
         </nav>
-    </div>
-    <!--Navigation Bar -->
+    </header>
 
-    <h1>Frequently Asked Questions (FAQ)</h1>
-    <p>Here you can find answers to common questions about the website.</p>
+    <main>
+        <div class="layout-container">
+            <section class="content-card" aria-labelledby="faq-heading">
+                <h1 id="faq-heading">Frequently Asked Questions</h1>
+                <p>Find quick answers about how to get started with KUGuide, make the most of our resources, and
+                    troubleshoot
+                    common issues.</p>
+            </section>
 
-    <hr>
-    <details>
-        <summary><strong>General Questions</strong></summary>
-        <h5>1. What is this website for?</h5>
-        <ul>
-            <li>
-                Its a platform for <a href="https://portal.ku.edu.kw" target="_blank">Kuwait University</a> students and
-                graduates to share, study materials, join discussions, and explore career guidance.
-            </li>
-        </ul>
-        <h5>2. Do i need an Account to use this website?</h5>
-        <ul>
-            <li>
-                Yes, you must use your University ID and password to Login
-            </li>
-        </ul>
-    </details>
+            <section class="content-card accordion" aria-label="Frequently asked questions grouped by topic">
+                <details open>
+                    <summary>General</summary>
+                    <h2>What is KUGuide?</h2>
+                    <p>KUGuide is a digital companion for
+                        <a href="https://portal.ku.edu.kw" target="_blank" rel="noopener">Kuwait University</a>
+                        students and graduates. It gathers study materials, discussion forums, and curated career
+                        guidance in
+                        one location.
+                    </p>
 
-    <hr>
+                    <h2>Do I need an account to use the platform?</h2>
+                    <p>Yes. Sign in with your university credentials to unlock personalised features, bookmark
+                        resources, and
+                        track your progress.</p>
+                </details>
 
-    <details>
-        <summary><strong>Chatroom Questions</strong></summary>
-        <h5>3. Can i share files and notes in the chat?</h5>
-        <ul>
-            <li>
-                Yes, you can upload files such as Docx, PDF directly in the chat to share with others.
-            </li>
-        </ul>
-        <h5>4. How do i join in the Chatroom page?</h5>
-        <ul>
-            <li>
-                After logging, please head to <a href="../Templates/index.html" target="_blank">Here.</a>
-            </li>
-        </ul>
-    </details>
+                <details>
+                    <summary>Study &amp; Community</summary>
+                    <h2>Can I share notes with classmates?</h2>
+                    <p>Absolutely. Upload files such as PDF or DOCX directly to course communities to collaborate with
+                        your
+                        peers.</p>
 
-    <hr>
+                    <h2>How do I join a course discussion?</h2>
+                    <p>After signing in, open your dashboard and select the course tile. From there, choose the
+                        discussion tab
+                        to start chatting.</p>
+                </details>
 
-    <details>
-        <summary><strong>Career Guidance Questions</strong></summary>
-        <h5>5. Where can i find job opportunities?</h5>
-        <ul>
-            <li>
-                After logging, please head to <a href="" </li>
-        </ul>
-    </details>
+                <details>
+                    <summary>Career guidance</summary>
+                    <h2>Where can I find internships or job postings?</h2>
+                    <p>Visit the <a href="../templates/career.html">Career page</a> to explore opportunities curated
+                        with the
+                        OSTA team. Filter listings by faculty or graduation year to find relevant matches.</p>
 
-    <hr>
+                    <h2>How can mentors help me?</h2>
+                    <p>Mentors provide feedback on CVs, guide your interview preparation, and connect you to industry
+                        events.
+                        You can request a session from the career resources section.</p>
+                </details>
 
-    <details>
-        <summary><strong>Account help</strong></summary>
-        <h5>6. How to reset my password?</h5>
-        <ul>
-            <li>Click "Forget password" or head to the <a href="https://portal.ku.edu.kw" target="_blank">Ku portal</a>
-                to reset your password.</li>
-        </ul>
-    </details>
+                <details>
+                    <summary>Account &amp; technical help</summary>
+                    <h2>How do I reset my password?</h2>
+                    <p>Choose “Forgot password” on the sign-in page or visit the
+                        <a href="https://portal.ku.edu.kw" target="_blank" rel="noopener">KU portal</a>
+                        to complete the reset process.
+                    </p>
 
-    <hr>
+                    <h2>Who do I contact for additional support?</h2>
+                    <p>Reach us from the <a href="../templates/contact.html">Contact page</a>. Include your university
+                        ID and a brief
+                        description so we can assist you quickly.</p>
+                </details>
+            </section>
+        </div>
+    </main>
 
-    <details>
-        <summary><strong>Technical help</strong></summary>
-        <h5>7. How to contact for help?</h5>
-        <ul>
-            <li>Please visit the <a href="../Templates/contact.html" target="_blank">Contact</a> page.</li>
-        </ul>
-    </details>
-
-
-
+    <footer>
+        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -114,14 +111,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../scripts/index.js"></script>
-    <footer>
-        Kuwait University Guide © <span id="current-year"></span> Kuwait University. All rights reserved.
-    </footer>
+
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-
 </body>
 
 </html>
