@@ -376,6 +376,203 @@ footer {
     border-top: 1px solid rgba(17, 75, 136, .1)
 }
 
+.auth-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 2.5rem;
+    align-items: start;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.auth-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.auth-card h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 0.5rem;
+}
+
+.auth-card p {
+    margin: 0;
+    color: rgba(17, 75, 136, 0.78);
+    line-height: 1.7;
+}
+
+.auth-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.auth-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.auth-form input[type=email],
+.auth-form input[type=password] {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(17, 75, 136, 0.2);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    font-size: 1rem;
+}
+
+.auth-form input[type=email]:focus,
+.auth-form input[type=password]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(17, 75, 136, 0.12);
+    outline: none;
+}
+
+/* --- Base Button Style (Unchanged) --- */
+.auth-form .btn {
+    position: relative;
+    font-weight: 600;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 12px 24px rgba(0, 119, 247, 0.18);
+    color: #fff;
+    background-color: #114B88;
+    /* base color */
+    border: none;
+    overflow: hidden;
+    /* This is key! It clips the ::before element */
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* --- MODIFIED "Swipe" Animation (Uses only transform) --- */
+.auth-form .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Cover the entire button */
+    background-color: #0077f7;
+    /* hover color */
+
+    /* 1. Start: The element is moved 100% to the left (off-screen) */
+    transform: translateX(-100%);
+
+    /* 2. Transition: Animate *only* the transform property */
+    transition: transform 0.4s ease-in-out;
+
+    z-index: -1;
+    border-radius: inherit;
+}
+
+/* 3. On hover: Move the element back to its original position (0) */
+.auth-form .btn:hover::before {
+    transform: translateX(0);
+}
+
+.auth-form .btn:hover {
+    color: #fff;
+}
+
+
+
+.form-utilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.form-utilities a {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.form-utilities a:hover,
+.form-utilities a:focus {
+    text-decoration: underline;
+}
+
+.custom-control.custom-checkbox {
+    padding-left: 2rem;
+    min-height: auto;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(17, 75, 136, 0.25);
+}
+
+.auth-support {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.support-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.support-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.support-card li {
+    color: rgba(17, 75, 136, 0.85);
+    line-height: 1.6;
+}
+
+.support-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.support-actions .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .auth-layout {
+        grid-template-columns: 1fr;
+        padding-top: 1.5rem;
+    }
+
+    .auth-support {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-form {
+        gap: 1rem;
+    }
+
+    .auth-form .btn {
+        box-shadow: 0 8px 16px rgba(220, 223, 225, 0.18);
+    }
+
+    .form-utilities {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .support-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .custom-navbar {
     position: fixed;
     top: 0;
