@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="alert-link" role="banner">
         <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
             <a class="navbar-brand" href="../templates/index.html">
@@ -19,21 +21,23 @@
                 <p class="navbar-p">KUGuide</p>
             </a>
             <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
+                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link active" href="../templates/contact.html" role="menuitem"
+                    aria-current="page">Contact</a>
+                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="layout-container">
             <section class="content-card" aria-labelledby="contact-heading">
                 <h1 id="contact-heading">We are here to help</h1>
-                <p>Reach the KUGuide support team for technical assistance, account questions, or collaboration enquiries. Share
+                <p>Reach the KUGuide support team for technical assistance, account questions, or collaboration
+                    enquiries. Share
                     your university ID so we can respond quickly.</p>
             </section>
 
@@ -56,24 +60,18 @@
 
             <section class="content-card" aria-labelledby="contact-form-heading">
                 <h2 id="contact-form-heading">Send us a message</h2>
-                <form class="contact-form" action="#" method="post">
-                    <div>
-                        <label for="name">Full name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div>
-                        <label for="email">University email</label>
-                        <input type="email" id="email" name="email" placeholder="username@ku.edu.kw" required>
-                    </div>
-                    <div>
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Share the details of your request" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit message</button>
+                <form class="contact-form" action="#" method="POST">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required placeholder="example@ku.edu.kw">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Write your message here..."></textarea>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </section>
         </div>

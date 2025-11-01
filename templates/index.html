@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="alert-link" role="banner">
         <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
             <a class="navbar-brand" href="../templates/index.html">
@@ -22,23 +24,22 @@
                 <p class="navbar-p">KUGuide</p>
             </a>
             <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
+                <a class="nav-link active" href="../templates/index.html" role="menuitem" aria-current="page">Home</a>
+                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link" href="../templates/contact.html" role="menuitem">Contact</a>
+                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="layout-container">
             <section class="hero" aria-labelledby="hero-heading">
                 <h1 id="hero-heading">Welcome to Kuwait University Guide</h1>
                 <p>Access curated learning materials, stay connected with classmates, receive AI-powered support, and
-                    move
-                    confidently toward your next career opportunity.</p>
+                    move confidently toward your next career opportunity.</p>
                 <div class="hero-actions">
                     <a class="btn btn-primary" href="../templates/profile.html">Explore your dashboard</a>
                     <a class="btn btn-light" href="../templates/career.html">Discover opportunities</a>
@@ -51,6 +52,7 @@
                     <p>Four pillars designed to support Kuwait University students throughout their academic journey.
                     </p>
                 </div>
+
                 <div class="feature-grid">
                     <article class="card h-100" aria-labelledby="community-title">
                         <img class="card-img-top" src="../images/section1-img/Student-community.png"
@@ -58,33 +60,33 @@
                         <div class="card-body text-center">
                             <h3 class="card-title" id="community-title">Student Community</h3>
                             <p class="card-text">Join lively course discussions, exchange experiences, and build a
-                                strong
-                                academic network.</p>
+                                strong academic network.</p>
                         </div>
                     </article>
+
                     <article class="card h-100" aria-labelledby="materials-title">
                         <img class="card-img-top-study" src="../images/section1-img/Study-materials.png"
                             alt="Lecture notes and study materials">
                         <div class="card-body text-center">
                             <h3 class="card-title" id="materials-title">Study Materials</h3>
                             <p class="card-text">Browse curated notes, textbooks, and revision guides tailored to your
-                                registered
-                                courses.</p>
+                                registered courses.</p>
                         </div>
                     </article>
+
                     <article class="card h-100" aria-labelledby="assistant-title">
                         <img class="card-img-top" src="../images/section1-img/AI-chatbot.png"
-                            alt="AI assistant answering a question">
+                            alt="AI assistant helping students">
                         <div class="card-body text-center">
                             <h3 class="card-title" id="assistant-title">AI Assistant</h3>
                             <p class="card-text">Receive quick answers to academic questions and personalised guidance
-                                whenever
-                                you need it.</p>
+                                whenever you need it.</p>
                         </div>
                     </article>
+
                     <article class="card h-100" aria-labelledby="career-title">
                         <img class="card-img-top-career" src="../images/section1-img/career.png"
-                            alt="Graduate receiving job offer">
+                            alt="Graduate celebrating job success">
                         <div class="card-body text-center">
                             <h3 class="card-title" id="career-title">Career Support</h3>
                             <p class="card-text">Discover internships, mentorship programmes, and job opportunities in
@@ -99,7 +101,8 @@
                     <h2 id="carousel-heading">Highlights from the Community</h2>
                     <p>Stay up to date with the latest announcements and collaborations across Kuwait University.</p>
                 </div>
-                <div id="carouselId" class="carousel slide" data-ride="carousel">
+
+                <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="2000">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselId" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselId" data-slide-to="1"></li>
@@ -110,27 +113,27 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <a href="https://www.instagram.com/osta_cba/" target="_blank" rel="noopener">
-                                <img src="../images/carousel/osta-cba.png" alt="OSTA CBA announcement slide one">
+                                <img src="../images/carousel/osta-cba.png" alt="OSTA CBA event banner 1">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="https://www.instagram.com/osta_cba/" target="_blank" rel="noopener">
-                                <img src="../images/carousel/osta-cba-1.png" alt="OSTA CBA announcement slide two">
+                                <img src="../images/carousel/osta-cba-1.png" alt="OSTA CBA event banner 2">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="https://www.instagram.com/osta_cba/" target="_blank" rel="noopener">
-                                <img src="../images/carousel/osta-cba-2.png" alt="OSTA CBA announcement slide three">
+                                <img src="../images/carousel/osta-cba-2.png" alt="OSTA CBA event banner 3">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="https://www.instagram.com/osta_cba/" target="_blank" rel="noopener">
-                                <img src="../images/carousel/osta-cba-3.png" alt="OSTA CBA announcement slide four">
+                                <img src="../images/carousel/osta-cba-3.png" alt="OSTA CBA event banner 4">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="https://www.instagram.com/osta_cba/" target="_blank" rel="noopener">
-                                <img src="../images/carousel/osta-cba-4.png" alt="OSTA CBA announcement slide five">
+                                <img src="../images/carousel/osta-cba-4.png" alt="OSTA CBA event banner 5">
                             </a>
                         </div>
                     </div>
@@ -150,23 +153,24 @@
                     <h2 id="quick-access-heading">Quick Access</h2>
                     <p>Jump directly to the areas of KUGuide that you use most often.</p>
                 </div>
+
                 <ul class="list-unstyled quick-links">
                     <li class="media">
-                        <img src="../images/section2-img/faq-section2.png" alt="Question mark icon">
+                        <img src="../images/section2-img/faq-section2.png" alt="FAQ section icon">
                         <div class="media-body">
                             <h5>Frequently Asked Questions</h5>
                             <a href="../templates/faq.html">Read the answers</a>
                         </div>
                     </li>
                     <li class="media">
-                        <img src="../images/section2-img/profile-section2.png" alt="User profile icon">
+                        <img src="../images/section2-img/profile-section2.png" alt="Profile section icon">
                         <div class="media-body">
                             <h5>Student Profile</h5>
                             <a href="../templates/profile.html">Manage your information</a>
                         </div>
                     </li>
                     <li class="media">
-                        <img src="../images/section2-img/career-section2.png" alt="Briefcase icon">
+                        <img src="../images/section2-img/career-section2.png" alt="Career section icon">
                         <div class="media-body">
                             <h5>Career Pathways</h5>
                             <a href="../templates/career.html">View guidance and events</a>
@@ -190,8 +194,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>

@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="alert-link" role="banner">
         <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
             <a class="navbar-brand" href="../templates/index.html">
@@ -22,17 +24,18 @@
                 <p class="navbar-p">KUGuide</p>
             </a>
             <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
+                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link active" href="../templates/career.html" role="menuitem"
+                    aria-current="page">Career</a>
+                <a class="nav-link" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link" href="../templates/contact.html" role="menuitem">Contact</a>
+                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="layout-container">
             <section class="content-card" aria-labelledby="career-heading">
                 <h1 id="career-heading">Plan your next step</h1>
@@ -68,19 +71,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>OSTA Internship Track</td>
-                            <td>Business analytics, marketing research</td>
-                            <td>15 May 2024</td>
+                            <td data-label="Programme">OSTA Internship Track</td>
+                            <td data-label="Focus area">Business analytics, marketing research</td>
+                            <td data-label="Application deadline">15 May 2024</td>
                         </tr>
                         <tr>
-                            <td>KU Alumni Mentorship</td>
-                            <td>STEM innovation projects</td>
-                            <td>28 May 2024</td>
+                            <td data-label="Programme">KU Alumni Mentorship</td>
+                            <td data-label="Focus area">STEM innovation projects</td>
+                            <td data-label="Application deadline">28 May 2024</td>
                         </tr>
                         <tr>
-                            <td>Leadership Bootcamp</td>
-                            <td>Soft skills and leadership labs</td>
-                            <td>10 June 2024</td>
+                            <td data-label="Programme">Leadership Bootcamp</td>
+                            <td data-label="Focus area">Soft skills and leadership labs</td>
+                            <td data-label="Application deadline">10 June 2024</td>
                         </tr>
                     </tbody>
                 </table>
@@ -97,8 +100,7 @@
                 <div class="hero-actions">
                     <a class="btn btn-primary" href="../templates/profile.html">Update your profile</a>
                     <a class="btn btn-light" href="https://www.instagram.com/osta_cba/" target="_blank"
-                        rel="noopener">Follow OSTA
-                        updates</a>
+                        rel="noopener">Follow OSTA updates</a>
                 </div>
             </section>
         </div>
@@ -117,8 +119,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>

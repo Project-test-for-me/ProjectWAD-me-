@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="alert-link" role="banner">
         <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
             <a class="navbar-brand" href="../templates/index.html">
@@ -19,80 +21,75 @@
                 <p class="navbar-p">KUGuide</p>
             </a>
             <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
+                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link active" href="../templates/faq.html" role="menuitem" aria-current="page">FAQ</a>
+                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link" href="../templates/profile.html" role="menuitem">Profile</a>
+                <a class="nav-link" href="../templates/contact.html" role="menuitem">Contact</a>
+                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="layout-container">
             <section class="content-card" aria-labelledby="faq-heading">
                 <h1 id="faq-heading">Frequently Asked Questions</h1>
                 <p>Find quick answers about how to get started with KUGuide, make the most of our resources, and
-                    troubleshoot
-                    common issues.</p>
+                    troubleshoot common issues.</p>
             </section>
 
             <section class="content-card accordion" aria-label="Frequently asked questions grouped by topic">
                 <details open>
                     <summary>General</summary>
+
                     <h2>What is KUGuide?</h2>
                     <p>KUGuide is a digital companion for
                         <a href="https://portal.ku.edu.kw" target="_blank" rel="noopener">Kuwait University</a>
                         students and graduates. It gathers study materials, discussion forums, and curated career
-                        guidance in
-                        one location.
+                        guidance in one location.
                     </p>
 
                     <h2>Do I need an account to use the platform?</h2>
                     <p>Yes. Sign in with your university credentials to unlock personalised features, bookmark
-                        resources, and
-                        track your progress.</p>
+                        resources, and track your progress.</p>
                 </details>
 
                 <details>
-                    <summary>Study &amp; Community</summary>
-                    <h2>Can I share notes with classmates?</h2>
-                    <p>Absolutely. Upload files such as PDF or DOCX directly to course communities to collaborate with
-                        your
-                        peers.</p>
+                    <summary>Study Materials</summary>
 
-                    <h2>How do I join a course discussion?</h2>
-                    <p>After signing in, open your dashboard and select the course tile. From there, choose the
-                        discussion tab
-                        to start chatting.</p>
+                    <h2>Where can I find my course notes?</h2>
+                    <p>Course materials are organised by department. After logging in, select your major to view
+                        uploaded notes and recommended textbooks.</p>
+
+                    <h2>Can I contribute my own materials?</h2>
+                    <p>Yes! Students can upload study notes, summaries, or guides once approved by moderators to ensure
+                        quality and accuracy.</p>
                 </details>
 
                 <details>
-                    <summary>Career guidance</summary>
-                    <h2>Where can I find internships or job postings?</h2>
-                    <p>Visit the <a href="../templates/career.html">Career page</a> to explore opportunities curated
-                        with the
-                        OSTA team. Filter listings by faculty or graduation year to find relevant matches.</p>
+                    <summary>AI Assistant</summary>
 
-                    <h2>How can mentors help me?</h2>
-                    <p>Mentors provide feedback on CVs, guide your interview preparation, and connect you to industry
-                        events.
-                        You can request a session from the career resources section.</p>
+                    <h2>How does the AI chatbot work?</h2>
+                    <p>The AI assistant helps answer academic questions, locate course resources, and provide university
+                        system guidance. It’s trained specifically for Kuwait University queries.</p>
+
+                    <h2>Can I talk to a real advisor?</h2>
+                    <p>Absolutely. The AI assistant complements, not replaces, human advisors. You can contact your
+                        faculty office or use the <a href="../templates/contact.html">Contact</a> page for personal
+                        assistance.</p>
                 </details>
 
                 <details>
-                    <summary>Account &amp; technical help</summary>
-                    <h2>How do I reset my password?</h2>
-                    <p>Choose “Forgot password” on the sign-in page or visit the
-                        <a href="https://portal.ku.edu.kw" target="_blank" rel="noopener">KU portal</a>
-                        to complete the reset process.
-                    </p>
+                    <summary>Career Support</summary>
 
-                    <h2>Who do I contact for additional support?</h2>
-                    <p>Reach us from the <a href="../templates/contact.html">Contact page</a>. Include your university
-                        ID and a brief
-                        description so we can assist you quickly.</p>
+                    <h2>How do I access OSTA opportunities?</h2>
+                    <p>Visit the <a href="../templates/career.html">Career</a> section to explore current internships,
+                        training programs, and events in partnership with OSTA.</p>
+
+                    <h2>Do I need to pay for these services?</h2>
+                    <p>No. All KUGuide career and academic resources are free for current Kuwait University students and
+                        alumni.</p>
                 </details>
             </section>
         </div>

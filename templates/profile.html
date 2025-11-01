@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="alert-link" role="banner">
         <nav class="navbar navbar-expand-md navbar-light custom-navbar" aria-label="Primary navigation">
             <a class="navbar-brand" href="../templates/index.html">
@@ -19,23 +21,23 @@
                 <p class="navbar-p">KUGuide</p>
             </a>
             <div class="nav justify-content-end" role="menubar">
-                <a class="nav-link active" href="../templates/index.html" role="menuitem">Home</a>
-                <a class="nav-link active" href="../templates/faq.html" role="menuitem">FAQ</a>
-                <a class="nav-link active" href="../templates/career.html" role="menuitem">Career</a>
-                <a class="nav-link active" href="../templates/profile.html" role="menuitem">Profile</a>
-                <a class="nav-link active" href="../templates/contact.html" role="menuitem">Contact</a>
-                <button type="button" class="btn btn-primary">Sign in</button>
+                <a class="nav-link" href="../templates/index.html" role="menuitem">Home</a>
+                <a class="nav-link" href="../templates/faq.html" role="menuitem">FAQ</a>
+                <a class="nav-link" href="../templates/career.html" role="menuitem">Career</a>
+                <a class="nav-link active" href="../templates/profile.html" role="menuitem"
+                    aria-current="page">Profile</a>
+                <a class="nav-link" href="../templates/contact.html" role="menuitem">Contact</a>
+                <button type="button" class="btn btn-primary" aria-label="Sign in to KUGuide">Sign in</button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="layout-container">
             <section class="content-card" aria-labelledby="profile-heading">
                 <h1 id="profile-heading">Your KUGuide Profile</h1>
                 <p>Keep your academic information, interests, and achievements up to date so KUGuide can tailor
-                    resources
-                    to your journey.</p>
+                    resources to your journey.</p>
             </section>
 
             <section class="content-card" aria-labelledby="snapshot-heading">
@@ -44,19 +46,19 @@
                     <tbody>
                         <tr>
                             <th scope="row">Programme</th>
-                            <td>Bachelor of Science in Computer Engineering</td>
+                            <td data-label="Programme">Bachelor of Science in Computer Engineering</td>
                         </tr>
                         <tr>
                             <th scope="row">Current Year</th>
-                            <td>Third Year</td>
+                            <td data-label="Current Year">Third Year</td>
                         </tr>
                         <tr>
                             <th scope="row">Focus Areas</th>
-                            <td>Embedded Systems, Data Science</td>
+                            <td data-label="Focus Areas">Embedded Systems, Data Science</td>
                         </tr>
                         <tr>
                             <th scope="row">Clubs &amp; Communities</th>
-                            <td>KU Robotics Club, Women in Tech</td>
+                            <td data-label="Clubs &amp; Communities">KU Robotics Club, Women in Tech</td>
                         </tr>
                     </tbody>
                 </table>
@@ -77,8 +79,7 @@
             <section class="content-card" aria-labelledby="profile-actions">
                 <h2 id="profile-actions">Next Steps</h2>
                 <p>Complete your profile to track deadlines, upcoming events, and relevant resources. The more complete
-                    your
-                    profile, the better your personalised recommendations will be.</p>
+                    your profile, the better your personalised recommendations will be.</p>
                 <div class="hero-actions">
                     <a class="btn btn-primary" href="../templates/contact.html">Request Profile Support</a>
                     <a class="btn btn-light" href="../templates/career.html">Review Career Matches</a>
